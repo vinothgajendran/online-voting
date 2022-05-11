@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xml:th="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:each="candidate : ${candidates}">
+    Click to Vote for:
+    <a th:href="@{/voteFor(id=${candidate.id})}" th:text="${candidate.name}"></a>
+</div>
+
+</body>
+</html>
