@@ -8,8 +8,8 @@
 
 <div th:each="candidate : ${candidates}">
     Click to Vote for:
-<a th:href="@{/voteFor(id=${candidate.id})}" th:text="${candidate.name}"></a>
+    <a th:href="@{/voteFor(id=${candidate.id})}" th:text="${candidate.name}"></a>
 </div>
-
+<br><a th:href="@{/logout}" >"Logout"</a>
 </body>
 </html>

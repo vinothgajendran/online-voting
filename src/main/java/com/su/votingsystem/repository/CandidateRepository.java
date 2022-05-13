@@ -1,6 +1,6 @@
 package com.su.votingsystem.repository;
 
-import com.su.votingsystem.entity.Candidate;
+import com.su.votingsystem.model.Candidate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
